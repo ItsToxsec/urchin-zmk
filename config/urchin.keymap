@@ -29,7 +29,7 @@
 
 
 / {
-    chosen { zmk,charmap = &charmap_us; };
+    // chosen { zmk,charmap = &charmap_us; };
 
     behaviors {
         ht: hold_tap {
