@@ -14,10 +14,10 @@
 ---
 include:
     - board: nice_nano_v2
-      shield: urchin_left nice_view_adapter nice_view_gem
+      shield: urchin_left nice_view_adapter nice_view
       cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n CONFIG_NICE_VIEW_GEM_ANIMATION=n
     - board: nice_nano_v2
-      shield: urchin_right nice_view_adapter nice_view_gem
+      shield: urchin_right nice_view_adapter nice_view
       cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n CONFIG_NICE_VIEW_GEM_ANIMATION=n
     - board: nice_nano_v2
       shield: settings_reset
