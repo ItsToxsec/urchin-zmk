@@ -15,11 +15,10 @@
 
 // Layer definitions
 #define BASE    0
-#define ALT     1
-#define NUM     2
-#define SYM     3
-#define NAV     4
-#define MED     5
+#define NUM     1
+#define SYM     2
+#define NAV     3
+#define MED     4
 // -----------------
 
 &sk {
