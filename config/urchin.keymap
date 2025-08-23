@@ -61,8 +61,8 @@
 
         default_layer {
             bindings = <
-    &kp Q       &kp W       &kp F       &kp P       &kp B                      &kp J           &kp L          &kp U       &kp Y           &kp :
-    &ht LGUI A  &ht LALT R  &ht LCTRL S &ht LSHFT T &kp G                      &kp M           &ht LSHFT N    &ht LCTRL E &ht RALT I      &ht LGUI O
+    &kp Q       &kp W       &kp F       &kp P       &kp B                      &kp J           &kp L          &kp U       &kp Y           &kp SEMI
+    &ht LGUI A  &ht LALT R  &ht LCTRL S &ht LSHFT T &kp G                      &kp M           &ht RSHFT N    &ht RCTRL E &ht RALT I      &ht RGUI O
     &kp Z       &kp X       &kp C       &kp D       &kp V                      &kp K           &kp H          &kp COMMA   &kp DOT         &kp FSLH
                                         &lt MED DEL &lt NAV BSPC               &lt NUM RET     &lt SYM SPACE
             >;
@@ -71,7 +71,7 @@
     alt_layer {
              bindings = <
 &kp Q       &kp W       &kp E       &kp R        &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
-&ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F  &kp G                      &kp H           &ht LSHFT J &ht LCTRL K &ht RALT L      &ht LGUI SEMI
+&ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F  &kp G                      &kp H           &ht RSHFT J &ht RCTRL K &ht RALT L      &ht LGUI SEMI
 &kp Z       &kp X       &kp C       &kp V        &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
                                     &lt MED BSPC &lt NAV DEL                &lt NUM SPACE   &lt SYM RET
             >;
@@ -79,10 +79,10 @@
 
         num_layer {
             bindings = <
-&kp LBRC   &kp F7  &kp F8  &kp F9    &kp RBRC    &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp FSLH
-&kp COLON  &kp F4  &kp F5  &kp F6    &kp PLUS    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp PLUS
-&kp DEL    &kp F1  &kp F2  &kp F3    &kp LALT    &kp BSLH   &kp N1  &kp N2  &kp N3  &kp MINUS
-                           &kp LPAR  &kp RPAR    &trans     &kp N0
+&kp LBRC        &kp F7       &kp F8        &kp F9          &kp RBRC    &kp ASTRK  &kp N7        &kp N8        &kp N9       &kp FSLH
+&ht LGUI COLON  &ht LALT F4  &ht LCTRL F5  &ht LSHFT F6    &kp PLUS    &kp EQUAL  &ht RSHFT N4  &ht RCTRL N5  &ht RALT N6  &ht RGUI PLUS
+&kp DEL         &kp F1       &kp F2        &kp F3          &kp LALT    &kp BSLH   &kp N1        &kp N2        &kp N3       &kp MINUS
+                                           &kp LPAR        &kp RPAR    &trans     &kp N0
             >;
         };
 
