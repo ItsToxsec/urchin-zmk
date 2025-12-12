@@ -13,11 +13,11 @@
 #
 ---
 include:
-  - board: nice_nano@2.0.0
+  - board: nice_nano
     shield: urchin_left nice_view_adapter  nice_view_gem
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano@2.0.0
+  - board: nice_nano
     shield: urchin_right nice_view_adapter nice_view_gem
-  - board: nice_nano@2.0.0
+  - board: nice_nano
     shield: settings_reset
