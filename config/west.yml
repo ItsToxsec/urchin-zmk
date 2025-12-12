@@ -7,12 +7,9 @@ manifest:
         - name: caksoylar
           url-base: https://github.com/caksoylar
           # kyek / duckyb
-        - name: duckyb
-          url-base: https://github.com/duckyb
-          # nice-view-gem
         - name: m165437
           url-base: https://github.com/M165437
-        - name: itstoxsec
+        - name: ItsToxsec
           url-base: https://github.com/ItsToxsec
     projects:
         - name: zmk
@@ -22,11 +19,8 @@ manifest:
         - name: urchin-zmk-module
           remote: duckyb
           revision: main
-        - name: nice-view-gem
-          remote: m165437
-          revision: main
         - name: nice-view-sly
-          remote: itstoxsec
+          remote: ItsToxsec
           revision: main
     self:
         path: config
