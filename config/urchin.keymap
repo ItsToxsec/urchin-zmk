@@ -70,6 +70,11 @@
             key-positions = <16 17>;
         };
 
+		combo_tab {
+			bindings = <&kp TAB>;
+			key-positions = <31 32>;
+		};
+
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
@@ -79,6 +84,16 @@
             bindings = <&kp MINUS>;
             key-positions = <8 9>;
         };
+
+		combo_lsuper {
+			bindings = <&kp LGUI>
+			key-positions = <20 21>;
+		};
+
+		combo_rsuper {
+			bindings = <&kp RGUI>
+			key-positions = <28 29>;
+		};
     };
 
     keymap {
