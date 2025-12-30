@@ -82,17 +82,17 @@
 
         combo_dash {
             bindings = <&kp MINUS>;
-            key-positions = <8 9>;
+            key-positions = <9 19>;
         };
 
 		combo_lsuper {
 			bindings = <&kp LGUI>;
-			key-positions = <20 21>;
+			key-positions = <10 20>;
 		};
 
 		combo_rsuper {
 			bindings = <&kp RGUI>;
-			key-positions = <28 29>;
+			key-positions = <19 29>;
 		};
     };
 
