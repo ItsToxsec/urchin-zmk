@@ -86,12 +86,12 @@
         };
 
 		combo_lsuper {
-			bindings = <&kp LGUI>
+			bindings = <&kp LGUI>;
 			key-positions = <20 21>;
 		};
 
 		combo_rsuper {
-			bindings = <&kp RGUI>
+			bindings = <&kp RGUI>;
 			key-positions = <28 29>;
 		};
     };
