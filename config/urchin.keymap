@@ -99,20 +99,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-             bindings = <
-&kp Q       &kp W       &kp E       &kp R        &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
-&ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F  &kp G                      &kp H           &ht RSHFT J &ht RCTRL K &ht RALT L      &ht LGUI SEMI
-&kp Z       &kp X       &kp C       &kp V        &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
+        default_layer { // GALLIUM
+			bindings = <
+&kp X       &kp Q       &kp M       &kp W        &kp V                      &kp J           &kp F       &kp FSLH    &kp SEMI        &kp DOT
+&ht LGUI N  &ht LALT R  &ht LCTRL T &ht LSHFT S  &kp G                      &kp P           &ht RSHFT H &ht RCTRL A &ht RALT E      &ht LGUI I
+&kp B       &kp L       &kp D       &kp D        &kp Z                      &kp K           &kp Y       &kp O       &kp U           &kp COMMA
                                     &lt MED BSPC &lt NAV DEL                &lt NUM RET     &lt SYM SPACE
             >;
         };
 
-    alt_layer { // Inverted Gallium
-             bindings = <
-&kp X       &kp M       &kp W       &kp G        &kp Q                      &kp K           &kp F       &kp O       &kp U           &kp MINUS
-&ht LGUI N  &ht LALT R  &ht LCTRL T &ht LSHFT S  &kp V                      &kp P           &ht RSHFT H &ht RCTRL A &ht RALT E      &ht LGUI I
-&kp B       &kp L       &kp D       &kp C        &kp J                      &kp Z           &kp Y       &kp COMMA   &kp DOT         &kp SEMI
+	    alt_layer { // QWERTY
+            bindings = <
+&kp Q       &kp W       &kp E       &kp R        &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
+&ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F  &kp G                      &kp H           &ht RSHFT J &ht RCTRL K &ht RALT L      &ht LGUI SEMI
+&kp Z       &kp X       &kp C       &kp V        &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
                                     &lt MED BSPC &lt NAV DEL                &lt NUM RET     &lt SYM SPACE
             >;
         };    
