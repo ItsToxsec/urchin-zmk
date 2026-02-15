@@ -103,7 +103,7 @@
 			bindings = <
 &kp X       &kp Q       &kp M       &kp W        &kp V                      &kp J           &kp F       &kp FSLH    &kp SEMI        &kp DOT
 &ht LGUI N  &ht LALT R  &ht LCTRL T &ht LSHFT S  &kp G                      &kp P           &ht RSHFT H &ht RCTRL A &ht RALT E      &ht LGUI I
-&kp B       &kp L       &kp D       &kp D        &kp Z                      &kp K           &kp Y       &kp O       &kp U           &kp COMMA
+&kp B       &kp L       &kp D       &kp C        &kp Z                      &kp K           &kp Y       &kp O       &kp U           &kp COMMA
                                     &lt MED BSPC &lt NAV DEL                &lt NUM RET     &lt SYM SPACE
             >;
         };
