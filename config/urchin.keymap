@@ -140,7 +140,7 @@
 &kp BSLH   &kp BSLH   &kp LBKT   &kp LBRC   &kp LPAR         &kp RPAR   &kp RBRC  &kp RBKT   &kp GRAVE  &kp EQUAL
 &kp N1     &kp N2     &kp N3     &kp N4     &kp N5           &kp N6     &kp N7    &kp N8     &kp N9     &kp N0   
 &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT        &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER
-                                 &kp LSHFT  &none            &none      &trans
+                                 &kp LSHFT  &kp LALT         &none      &trans
 
 //kp CAPS   &kp ESC    &kp LBKT   &kp LBRC   &kp LPAR   &kp RPAR   &kp RBRC  &kp RBKT   &kp EQUAL  &kp PLUS
 //&kp COLON  &kp GRAVE  &kp EXCL   &kp PIPE   &kp FSLH   &kp ASTRK  &kp DLLR  &kp PRCNT  &kp CARET  &kp SEMI
@@ -153,7 +153,7 @@
             bindings = <
 &kp PSCRN  &none   		  &kp UP   		  &none    		   &none        &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
 &kp LGUI   &ht LALT LEFT  &ht LCTRL DOWN  &ht LSHFT RIGHT  &kp PG_UP    &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MCLK
-&none      &none     	  &none     	  &none      	   &kp HOME     &kp END    &kp H           &kp J           &kp K            &kp L
+&none      &none     	  &kp LALT   	  &kp TAB      	   &kp HOME     &kp END    &kp H           &kp J           &kp K            &kp L
                                			  &none      	   &trans       &mkp LCLK  &mkp RCLK
             >;
         };
