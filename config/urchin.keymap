@@ -70,13 +70,6 @@
     };
 
     macros {
-        rgb_ug_status_macro: rgb_ug_status_macro_0 {
-            label = "RGB_UG_STATUS";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_STATUS>;
-        };
-
         bt_0: bt_profile_macro_0 {
             label = "BT_0";
             compatible = "zmk,behavior-macro";
@@ -229,7 +222,7 @@
             bindings = <
 &sys_reset  &to 2     &none      &studio_unlock  &bootloader   &bootloader   &to 0         &to 1         &to 3         &sys_reset
 &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT       &out OUT_USB  &out OUT_BLE  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
-&none       &none     &none      &none           &bt BT_CLR    &kp C_STOP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+&none       &none     &none      &none           &bt BT_CLR    &kp C_STOP    &bt_0         &bt_1         &bt_2         &bt_3
                                  &trans          &none         &kp C_PP      &kp C_MUTE
             >;
         };
