@@ -113,10 +113,10 @@
 
         qwerty_layer {
             bindings = <
-&kp Q       &kp W       &kp E        &kp R        &kp T      &kp Y        &kp U        &kp I        &kp O       &kp P
-&ht LGUI A  &ht LALT S  &ht LCTRL D  &ht LSHFT F  &kp G      &kp H        &ht RSHFT J  &ht RCTRL K  &ht RALT L  &ht LGUI SEMI
-&kp Z       &kp X       &kp C        &kp V        &kp B      &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                                     &lt 6 BSPC   &lt 7 DEL  &lt 5 ENTER  &lt 4 SPACE
+&kp Q  &kp W       &kp E        &kp R        &kp T      &kp Y        &kp U        &kp I        &kp O       &kp P
+&kp A  &kp S       &kp D        &kp F        &kp G      &kp H        &ht RSHFT J  &ht RCTRL K  &ht RALT L  &ht LGUI SEMI
+&kp Z  &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B      &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH
+                                &lt 6 BSPC   &lt 7 DEL  &lt 5 ENTER  &lt 4 SPACE
             >;
         };
 
