@@ -11,7 +11,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 // Layer definitions
 
@@ -169,8 +168,8 @@
             bindings = <
 &kp PSCRN  &none         &none       &none         &none      &none      &kp C_AC_BACK  &kp C_AC_FORWARD  &none     &none
 &kp LGUI   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PG_UP  &kp PG_DN  &kp UP         &kp DOWN          &kp LEFT  &kp RIGHT
-&none      &none         &kp LALT    &kp TAB       &kp HOME   &kp END    &kp H          &kp J             &kp K     &kp L
-                                     &none         &trans     &mkp LCLK  &mkp RCLK
+&none      &none         &kp LALT    &kp LSHFT     &kp HOME   &kp END    &kp H          &kp J             &kp K     &kp L
+                                     &none         &trans     &trans     &kp TAB
             >;
         };
 
@@ -179,7 +178,7 @@
 &sys_reset  &to 2     &none      &studio_unlock  &bootloader   &bootloader   &to 1       &to 0         &to 3         &sys_reset
 &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT       &out OUT_USB  &out OUT_BLE  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
 &none       &none     &none      &none           &bt BT_CLR    &kp C_STOP    &bt_0       &bt_1         &bt_2         &bt_3
-                                 &trans          &none         &kp C_PP      &kp C_MUTE
+                                 &trans          &none         &trans        &trans
             >;
         };
     };
