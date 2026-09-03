@@ -115,7 +115,7 @@
 &kp Q  &kp W       &kp E        &kp R        &kp T      &kp Y      &kp U        &kp I            &kp O         &kp P
 &kp A  &kp S       &kp D        &kp F        &kp G      &kp H      &kp J        &kp K            &kp L         &kp SEMI
 &kp Z  &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B      &kp N      &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH
-                                &lt 7 BSPC   &lt 6 DEL  &lt 4 RET  &lt 5 SPACE
+                                &lt 7 BSPC   &lt 5 DEL  &lt 4 RET  &lt 6 SPACE
             >;
         };
 
@@ -133,7 +133,7 @@
 &kp Q  &kp W       &kp F        &kp P        &kp B      &kp J      &kp L        &kp U            &kp Y            &kp SEMI
 &kp A  &kp R       &kp S        &kp T        &kp G      &kp M      &kp N        &kp E            &kp I            &kp O
 &kp Z  &ht LALT X  &ht LCTRL C  &ht LSHFT D  &kp V      &kp K      &ht RSHFT H  &ht RCTRL COMMA  &ht RALT PERIOD  &kp FSLH
-                                &lt 7 BSPC   &lt 6 DEL  &lt 4 RET  &lt 5 SPACE
+                                &lt 7 BSPC   &lt 5 DEL  &lt 4 RET  &lt 6 SPACE
             >;
         };
 
@@ -169,7 +169,7 @@
 &kp PSCRN  &none         &none       &none         &none      &none      &kp C_AC_BACK  &kp C_AC_FORWARD  &none     &none
 &kp LGUI   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PG_UP  &kp PG_DN  &kp UP         &kp DOWN          &kp LEFT  &kp RIGHT
 &none      &none         &kp LALT    &kp LSHFT     &kp HOME   &kp END    &kp H          &kp J             &kp K     &kp L
-                                     &none         &trans     &trans     &kp TAB
+                                     &kp TAB       &none      &none      &trans
             >;
         };
 
@@ -178,7 +178,7 @@
 &sys_reset  &to 2     &none      &studio_unlock  &bootloader   &bootloader   &to 1       &to 0         &to 3         &sys_reset
 &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT       &out OUT_USB  &out OUT_BLE  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
 &none       &none     &none      &none           &bt BT_CLR    &kp C_STOP    &bt_0       &bt_1         &bt_2         &bt_3
-                                 &trans          &none         &trans        &kp TAB
+                                 &trans          &none         &none         &kp TAB
             >;
         };
     };
