@@ -105,6 +105,11 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+
+        combo_slck {
+            bindings = <&kp SCROLLLOCK>;
+            key-positions = <29 20>;
+        };
     };
 
     keymap {
