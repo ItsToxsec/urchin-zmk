@@ -22,6 +22,6 @@ include:
     - board: nice_nano_v2
       shield: settings_reset
     - board: raytac_mdbt50q_rx
-      shield: my_keyboard_dongle
+      shield: urchin_dongle
     - board: raytac_mdbt50q_rx
       shield: settings_reset
