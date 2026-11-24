@@ -16,6 +16,9 @@ manifest:
           remote: zmkfirmware
           revision: v0.3.0
           import: app/west.yml
+        - name: zmk-component-raytac-dongle
+          remote: rschenk
+          revision: v0.3
         - name: urchin-zmk-module
           remote: duckyb
           revision: main
