@@ -11,6 +11,8 @@ manifest:
           url-base: https://github.com/duckyb
         - name: ItsToxsec
           url-base: https://github.com/ItsToxsec
+        - name: rschenk
+          url-base: https://github.com/rschenk
     projects:
         - name: zmk
           remote: zmkfirmware
