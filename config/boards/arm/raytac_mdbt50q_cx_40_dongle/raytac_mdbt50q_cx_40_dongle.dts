@@ -1,0 +1,72 @@
+/*
+ * Raytac MDBT50Q-CX-40 Dongle (nRF52840)
+ *
+ * Ported from zephyr boards/raytac/mdbt50q_cx_40_dongle, which only exists in
+ * Zephyr 4.2+. ZMK v0.3 builds against Zephyr 3.5, so the board lives here in
+ * the old (hardware model v1) layout instead.
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/dts-v1/;
+#include <nordic/nrf52840_qiaa.dtsi>
+
+/ {
+    model = "Raytac MDBT50Q-CX-40 Dongle";
+    compatible = "raytac,mdbt50q-cx-40-dongle";
+
+    chosen {
+        zephyr,sram = &sram0;
+        zephyr,flash = &flash0;
+    };
+};
+
+&gpiote {
+    status = "okay";
+};
+
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
+};
+
+zephyr_udc0: &usbd {
+    status = "okay";
+};
+
+&flash0 {
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+        /*
+         * 0x0-0x1000 is the factory-programmed Nordic MBR. The application is
+         * linked at 0x1000 via FLASH_LOAD_OFFSET (see Kconfig.defconfig)
+         * rather than via zephyr,code-partition, matching how the stock nRF5
+         * bootloader loads DFU images.
+         */
+        mbr_partition: partition@0 {
+            reg = <0x00000000 0x00001000>;
+        };
+        code_partition: partition@1000 {
+            reg = <0x00001000 0x000ef000>;
+        };
+
+        /* Settings (BLE bonds, active profile, ...) via NVS. */
+        storage_partition: partition@f0000 {
+            reg = <0x000f0000 0x00004000>;
+        };
+
+        /*
+         * Nordic nRF5 bootloader. The last two flash pages beyond this are
+         * used by the bootloader and MBR for their own settings.
+         */
+        boot_partition: partition@f4000 {
+            reg = <0x000f4000 0x0000a000>;
+        };
+    };
+};

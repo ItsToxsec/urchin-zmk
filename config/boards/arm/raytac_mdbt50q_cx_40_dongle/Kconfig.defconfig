@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: MIT
+
+if BOARD_RAYTAC_MDBT50Q_CX_40_DONGLE
+
+config BOARD
+    default "raytac_mdbt50q_cx_40_dongle"
+
+# The stock Nordic nRF5 bootloader loads the application directly after the MBR.
+config FLASH_LOAD_OFFSET
+    default 0x1000
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
+endif # BOARD_RAYTAC_MDBT50Q_CX_40_DONGLE

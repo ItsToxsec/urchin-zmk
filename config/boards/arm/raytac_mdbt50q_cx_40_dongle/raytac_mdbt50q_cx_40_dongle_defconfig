@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: MIT
+
+CONFIG_SOC_SERIES_NRF52X=y
+CONFIG_SOC_NRF52840_QIAA=y
+CONFIG_BOARD_RAYTAC_MDBT50Q_CX_40_DONGLE=y
+
+CONFIG_ARM_MPU=y
+CONFIG_PINCTRL=y
+CONFIG_GPIO=y
+
+# This dongle ships with the Nordic nRF5 bootloader, not a UF2 bootloader: link
+# with FLASH_LOAD_OFFSET (see Kconfig.defconfig) and flash zmk.hex over DFU.
+CONFIG_USE_DT_CODE_PARTITION=n
+CONFIG_BUILD_OUTPUT_UF2=n
+
+CONFIG_MPU_ALLOW_FLASH_WRITE=y
+CONFIG_NVS=y
+CONFIG_SETTINGS_NVS=y
+CONFIG_FLASH=y
+CONFIG_FLASH_PAGE_LAYOUT=y
+CONFIG_FLASH_MAP=y
+
+CONFIG_ZMK_BLE=y
+CONFIG_ZMK_USB=y
+
+# Zephyr defaults the 32.768 kHz source to the crystal, which the MDBT50Q module
+# has. If BLE never comes up on your dongle, fall back to the internal RC:
+# CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
