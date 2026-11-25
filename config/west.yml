@@ -11,16 +11,11 @@ manifest:
           url-base: https://github.com/duckyb
         - name: ItsToxsec
           url-base: https://github.com/ItsToxsec
-        - name: perrwa
-          url-base: https://github.com/perrwa
     projects:
         - name: zmk
           remote: zmkfirmware
           revision: v0.3.0
           import: app/west.yml
-        - name: zmk-component-raytac-dongle
-          remote: perrwa
-          revision: v0.3
         - name: urchin-zmk-module
           remote: duckyb
           revision: main

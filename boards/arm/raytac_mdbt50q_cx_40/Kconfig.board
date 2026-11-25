@@ -1,0 +1,4 @@
+# Raytac MDBT50Q-CX-40 (nRF52840, USB-C), legacy Zephyr HWMv1
+config BOARD_RAYTAC_MDBT50Q_CX_40
+    bool "Raytac MDBT50Q-CX-40 USB-C dongle"
+    depends on SOC_NRF52840_QIAA

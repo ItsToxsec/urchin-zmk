@@ -1,0 +1,10 @@
+identifier: raytac_mdbt50q_cx_40
+name: Raytac MDBT50Q-CX-40 USB-C Dongle
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - usb_device
+  - ble
